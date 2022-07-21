@@ -1,0 +1,8 @@
+server:
+  port: 8090
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://master:master@localhost:27017
+      database: payments
