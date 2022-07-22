@@ -13,8 +13,6 @@ import java.util.stream.Collectors;
 @Component
 public class InstallmentSimulatorMapper {
 
-    private static final String SINGLE_INSTALLMENT = "SINGLE_INSTALLMENT";
-
     public SimulationData map(SimulationRequestDto requestDto) {
         return SimulationData.builder()
                 .firstDueDate(requestDto.getFirstDueDate())
@@ -24,7 +22,7 @@ public class InstallmentSimulatorMapper {
     }
 
     public List<ParcelResponseDto> map(ListParcel listRecurrenceInvoice) {
-        return listRecurrenceInvoice.getParcels().stream().map(e -> toDto(e)).collect(Collectors.toList());
+        return listRecurrenceInvoice.getParcels().stream().map(e -> this.toDto(e)).collect(Collectors.toList());
     }
 
     private ParcelResponseDto toDto(GeneratedParcel e) {
