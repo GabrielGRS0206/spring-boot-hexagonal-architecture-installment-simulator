@@ -1,4 +1,18 @@
-# Simulando Parcelamento
+
+# Spring Boot Hexagonal Architecture Installment Simulator
+
+Tecnologias utilizadas:
+
+- Spring Boot
+- Spring Data MongoDB
+- REST
+- MongoDB
+- JUnit
+- Mockito
+- Lombok
+- OpenAPI
+
+## Simulando Parcelamento
 
 POST /v1/simulations
 RequestBody : SimulatorRequestDto
@@ -45,7 +59,7 @@ Total parcelas = 36,48 - 36,50 = 0,2 ( adicionado a última parcela )
 
 O retorno da simulação irá retornar um campo id com um valor, esse valor poderá ser usado para recuperar a simulação.
 
-# Recuperando Simulação
+#E Recuperando Simulação
 
 GET /v1/simulations
 
