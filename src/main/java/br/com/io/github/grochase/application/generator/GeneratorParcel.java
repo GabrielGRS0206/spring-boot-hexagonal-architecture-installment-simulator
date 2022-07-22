@@ -55,7 +55,7 @@ public class GeneratorParcel {
         }
 
         for(GeneratedParcel o : list){
-            log.info(" Parcela : "+o.getParcel()+" Valor : "+o.getValueParcel()+" Data vencimento : "+ FormatDateUtils.formatDateDDMMYYYY(o.getDueDate()));
+            log.info(o.getParcel().substring(0,2)+ " -> Parcela : "+o.getParcel()+" - Valor : "+o.getValueParcel()+" - Data vencimento : "+ FormatDateUtils.formatDateDDMMYYYY(o.getDueDate()));
         }
 
         return list;

@@ -26,4 +26,14 @@ public class InstallmentSimulatorDataManager {
                 .parcels(installmentSimulatorMapper.map(listParcel))
                 .build();
     }
+
+    public SimulationResponseDto findById(String id) {
+
+        ListParcel listParcel = installmentSimulatorUseCasePort.findById(id);
+
+        return SimulationResponseDto.builder()
+                .id(listParcel.getId())
+                .parcels(installmentSimulatorMapper.map(listParcel))
+                .build();
+    }
 }

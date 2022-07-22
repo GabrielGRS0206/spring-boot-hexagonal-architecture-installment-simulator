@@ -4,5 +4,6 @@ server:
 spring:
   data:
     mongodb:
-      uri: mongodb://master:master@localhost:27017
+      uri: mongodb://localhost:27017
+      #uri: mongodb://master:master@localhost:27017
       database: payments

@@ -22,4 +22,9 @@ public class InstallmentSimulatorUseCaseImpl implements InstallmentSimulatorUseC
     public ListParcel generate(SimulationData parcelLot) {
         return generatorParcel.generate(parcelLot);
     }
+
+    @Override
+    public ListParcel findById(String id) {
+        return simulatorRepositoryPort.findById(id);
+    }
 }

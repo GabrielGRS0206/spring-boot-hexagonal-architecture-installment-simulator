@@ -6,4 +6,5 @@ public interface SimulatorRepositoryPort {
 
     ListParcel save(ListParcel invoice);
 
+    ListParcel findById(String id);
 }

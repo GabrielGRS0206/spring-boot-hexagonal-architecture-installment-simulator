@@ -8,4 +8,6 @@ public interface InstallmentSimulatorUseCasePort {
     ListParcel save(ListParcel listParcel);
 
     ListParcel generate(SimulationData parcelLot);
+
+    ListParcel findById(String id);
 }
