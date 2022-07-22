@@ -19,16 +19,16 @@ public class SwaggerConfig {
     contact.setEmail("gabrielrocha0206@gmail.com");
 
     return new OpenAPI()
-        .info(
-            new Info()
-                .title("Spring Hexagonal Architecture - App Payments")
-                .version("1.0")
-                .description("payments")
-                .contact(contact))
-        .externalDocs(
-            new ExternalDocumentation()
-                .description("Documentation")
-                .url("https://github.com/GabrielGRS0206/spring-boot-hexagonal-architecture"));
+            .info(
+                    new Info()
+                            .title("Installment Simulator")
+                            .version("1.0")
+                            .description("simulator")
+                            .contact(contact))
+            .externalDocs(
+                    new ExternalDocumentation()
+                            .description("Documentation")
+                            .url("https://github.com/GabrielGRS0206/spring-boot-hexagonal-architecture-installment-simulator"));
   }
 
 
