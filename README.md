@@ -59,7 +59,7 @@ Total parcelas = 36,48 - 36,50 = 0,2 ( adicionado a última parcela )
 
 O retorno da simulação irá retornar um campo id com um valor, esse valor poderá ser usado para recuperar a simulação.
 
-#E Recuperando Simulação
+## Recuperando Simulação
 
 GET /v1/simulations
 
